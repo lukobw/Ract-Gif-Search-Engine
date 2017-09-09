@@ -21,9 +21,9 @@ App = React.createClass ({
                 sourceUrl: data.url
             };
             callback(gif);
-        }
-    };
-    xhr.send();
+            }
+        };
+        xhr.send();
     },
     handleSearch: function(searchingText) {
         this.setState ({
@@ -51,7 +51,7 @@ App = React.createClass ({
                 <Gif
                     loading = {this.state.loading}
                     url = {this.state.gif.url}
-                    sourceUrl = {this.state.gif.soyrceUrl}
+                    sourceUrl = {this.state.gif.sourceUrl}
                 />
             </div>
         );

@@ -9,7 +9,7 @@ Search = React.createClass ({
         this.setState ({
             searchingText: searchingText
         });
-        if (searchingText.lenght > 2) {
+        if (searchingText.length > 2) {
             this.props.onSearch(searchingText);
         }
     },
